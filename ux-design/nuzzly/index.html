@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nuzzly UX design case study by Laticia Long: marketplace discovery, messaging, booking states, dashboards, and safety.">
+  <title>Nuzzly UX Design Case Study — Laticia Long</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script defer src="../assets/site.js"></script>
+</head>
+<body>
+  <header class="site-nav">
+    <a class="brand" href="../">Laticia Long</a>
+    <button class="menu" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <nav id="nav-links"><a href="../#work">Work</a><a href="../#about">About</a><a href="../../">UX Writing</a><a href="mailto:laticia.long@gmail.com">Contact</a></nav>
+  </header>
+
+  <main class="case-study">
+    <section class="case-hero">
+      <a class="back-link" href="../">← All work</a>
+      <p class="eyebrow coral">UX DESIGN · UX RESEARCH · UX WRITING · QA</p>
+      <h1>Nuzzly</h1>
+      <p class="case-dek">Making pet care easier to discover, book, and manage.</p>
+      <div class="case-meta">
+        <dl><dt>My role</dt><dd>UX design, UX writing, product QA</dd></dl>
+        <dl><dt>Timeline</dt><dd>May—July 2026</dd></dl>
+        <dl><dt>Platform</dt><dd>Responsive marketplace</dd></dl>
+        <dl><dt>Team</dt><dd>Product, design, engineering</dd></dl>
+      </div>
+      <div class="hero-showcase">
+        <img class="desktop-shot" src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/explore-listings-after-coral.png" alt="Nuzzly Explore page redesign with filters and pet-sitting listings">
+        <img class="mobile-shot" src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/chat-state-redesign-coral.png" alt="Nuzzly mobile booking state redesign">
+      </div>
+    </section>
+
+    <section class="case-overview split-section">
+      <p class="section-index">OVERVIEW</p>
+      <div>
+        <h2>A two-sided marketplace can’t work when users don’t know what state they’re in.</h2>
+        <p>Nuzzly connects pet owners with sitters. I tested complete journeys across discovery, applications, booking, messaging, support, and listing management. The main problem wasn’t one isolated screen: the experience communicated different rules in different places.</p>
+        <p>I mapped the breakdowns, redesigned the highest-risk flows, and paired interaction changes with language that accurately reflected system behavior.</p>
+        <div class="challenge-grid">
+          <div><span>40+</span><p>UX, content, and product issues documented</p></div>
+          <div><span>2</span><p>Marketplace roles tested end to end</p></div>
+          <div><span>3</span><p>Core journeys redesigned in depth</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process-band" aria-label="Design process">
+      <div><span>01</span><strong>Audit</strong><small>Test owner and sitter journeys</small></div>
+      <i>→</i><div><span>02</span><strong>Map</strong><small>Connect screens, states, and permissions</small></div>
+      <i>→</i><div><span>03</span><strong>Design</strong><small>Prototype clearer paths and recovery</small></div>
+      <i>→</i><div><span>04</span><strong>Validate</strong><small>Turn decisions into release checks</small></div>
+    </section>
+
+    <section class="case-section">
+      <header class="section-heading"><span>01</span><div><p>EXPLORE + DISCOVERY</p><h2>Make the user’s goal visible before showing the inventory.</h2></div></header>
+      <div class="section-copy"><p>The original Explore experience mixed search modes, location filters, and saved-item behavior. Before users could evaluate a listing, they first had to interpret how the page worked.</p><p>I reorganized the experience around the primary task—<strong>Find a sit</strong>—then clarified filter labels, separated view controls from saved items, and strengthened the information hierarchy of each result.</p></div>
+      <div class="comparison">
+        <figure><span>BEFORE · UNCLEAR MODE</span><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/explore-before-coral-clean.png" alt="Original Nuzzly Explore interface"><figcaption>Competing controls and ambiguous modes made the starting point difficult to scan.</figcaption></figure>
+        <figure class="after"><span>AFTER · TASK-LED DISCOVERY</span><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/explore-listings-after-coral.png" alt="Redesigned Nuzzly Explore interface"><figcaption>The redesign names the task, groups filters, and makes results easier to compare.</figcaption></figure>
+      </div>
+      <div class="design-decisions"><article><b>01</b><h3>Name the mode</h3><p>“Find a sit” orients owners and sitters before they act.</p></article><article><b>02</b><h3>Group by intent</h3><p>Location and date filters sit together instead of competing with view controls.</p></article><article><b>03</b><h3>Support comparison</h3><p>Consistent cards expose the details users need to decide.</p></article></div>
+    </section>
+
+    <section class="case-section alt-section">
+      <header class="section-heading"><span>02</span><div><p>MESSAGING + BOOKING STATES</p><h2>Design one source of truth for a changing transaction.</h2></div></header>
+      <div class="section-copy"><p>After an owner accepted a sitter, the interface could display <strong>Booking Confirmed</strong> while the timeline said the sitter had declined. Stale buttons remained available, so the next step was unclear.</p><p>I redesigned the card as a state-based component: the status, explanation, and action change together. A declined invitation removes invalid booking controls and leads the owner toward finding another sitter.</p></div>
+      <div class="comparison">
+        <figure><span>BEFORE · CONFLICTING STATES</span><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/chat-state-before-clean.png" alt="Original Nuzzly messages showing conflicting booking states"><figcaption>The card, timeline, and actions describe different versions of the transaction.</figcaption></figure>
+        <figure class="after"><span>AFTER · AUTHORITATIVE STATE</span><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/chat-state-redesign-coral.png" alt="Nuzzly redesigned declined invitation state"><figcaption>One current status explains what happened and offers one relevant recovery path.</figcaption></figure>
+      </div>
+      <div class="state-model"><span>OWNER ACCEPTS</span><i>→</i><span>WAITING FOR SITTER</span><i>→</i><span class="success">CONFIRMED</span><em>or</em><span class="declined">DECLINED → FIND ANOTHER SITTER</span></div>
+
+      <div class="nested-story">
+        <div><p class="eyebrow coral">DESTRUCTIVE ACTIONS</p><h3>Make opposite choices look and sound different.</h3><p>The cancellation dialog used “Cancel” to keep a booking and “Cancel Booking” to end it. I changed the safe action to <strong>Keep booking</strong>, retained an explicit destructive label, and gave the two actions distinct visual weight.</p></div>
+        <div class="phone-comparison"><figure><span>BEFORE</span><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/chat-cancel-before-no-alipay-v2.png" alt="Original ambiguous Nuzzly cancellation dialog"></figure><figure><span>AFTER</span><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/chat-cancel-redesign-no-alipay-v2.png" alt="Redesigned Nuzzly cancellation dialog"></figure></div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <header class="section-heading"><span>03</span><div><p>DASHBOARD + LISTING MANAGEMENT</p><h2>Show what users can do now—and what becomes available later.</h2></div></header>
+      <div class="section-copy"><p>The dashboard mixed applications, active sits, support, and messaging without explaining when private contact details were shared. Some actions appeared twice, while important state boundaries were invisible.</p><p>I treated the dashboard as an operational workspace: one primary action per intent, clearer tabs, visible confirmation status, and transparent rules for contact sharing and emergency support.</p></div>
+      <figure class="wide-evidence"><div class="crop-banner"><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/dashboard-before.png" alt="Nuzzly dashboard showing booking status, emergency support, contact-sharing details, and messaging actions"></div><figcaption><b>Product-state review</b><span>The later interface added an Emergency &amp; support area, but duplicated messaging and exposed backend terminology.</span></figcaption></figure>
+      <div class="dashboard-principles"><div><span>ONE INTENT</span><strong>One messaging entry point</strong><p>Remove duplicate “Message Owner” and “Message” actions.</p></div><div><span>VISIBLE RULE</span><strong>Contact details after confirmation</strong><p>Explain the safety boundary without implementation language.</p></div><div><span>CONSISTENT STATE</span><strong>Cards and timelines agree</strong><p>Use the same authoritative status everywhere.</p></div></div>
+    </section>
+
+    <section class="case-section alt-section">
+      <header class="section-heading"><span>04</span><div><p>SYSTEM THINKING</p><h2>Extend the redesign beyond the happy path.</h2></div></header>
+      <div class="system-grid">
+        <article><span>EMPTY STATES</span><h3>Give absence a next step</h3><p>Replace dead ends with actions such as “Start the conversation” and guidance that reflects the user’s history.</p></article>
+        <article><span>SIGN-IN</span><h3>Support recognition</h3><p>Surface recently used emails while preserving “Use another email” and recovery paths.</p></article>
+        <article><span>SUPPORT</span><h3>Confirm the handoff</h3><p>Tell users when they are being connected to a person and what context will transfer.</p></article>
+        <article><span>RELEASE QA</span><h3>Make design testable</h3><p>Define expected statuses, permissions, actions, and fallback states as acceptance criteria.</p></article>
+      </div>
+      <figure class="wide-evidence soft"><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/signin-comparison.png" alt="Nuzzly remembered email sign-in concept"><figcaption><b>Recognition pattern</b><span>A returning user can recognize the right account or choose a different path without starting over.</span></figcaption></figure>
+    </section>
+
+    <section class="outcome split-section">
+      <p class="section-index">OUTCOME</p>
+      <div><h2>From isolated screens to a coherent marketplace system.</h2><p>The audit documented more than 40 UX, content, and product issues. The redesign connected discovery, messaging, booking, dashboards, sign-in, and support around consistent states and clearer recovery.</p><p class="disclosure">Original screens show the product states I reviewed. “After” screens are design concepts based on my recommendations and are not presented as shipped production work.</p><a class="button" href="../">Back to all work <span>↗</span></a></div>
+    </section>
+  </main>
+  <footer><span>© 2026 Laticia Long</span><a href="https://www.linkedin.com/in/laticia-l/">LinkedIn ↗</a></footer>
+</body>
+</html>
